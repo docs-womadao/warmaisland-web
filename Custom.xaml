@@ -1,0 +1,118 @@
+﻿<local:MyCard Title="主菜单" Margin="0,0,0,15">
+    <StackPanel Margin="25,40,23,15">
+        <!-- 这是第一行 -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" ColorType="Highlight"
+                   Text="沃玛岛官网" EventType="打开网页" EventData="http://womadao.top/" ToolTip="前往“沃玛岛官网”！" />
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                   Text="进入沃玛岛" EventType="启动游戏" EventData="沃玛岛服务器|mc.womadao.top" ToolTip="进入沃玛岛服务器" />
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                   Text="前往b站关注我们" EventType="打开网页" EventData="https://space.bilibili.com/112978436" ColorType="red"/>
+        </StackPanel>
+      
+        <!-- 这是第二行 -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" ColorType="Highlight"
+                   Text="沃玛人皮肤站" EventType="打开网页" EventData="https://skin.warma.ren/" ToolTip="前往“沃玛人皮肤站”！" />
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                   Text="赞助我们" EventType="打开网页" EventData="https://womadao.warma.ren/#/donate" ToolTip="前往“沃玛岛赞助页面”！" />
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                   Text="加入官方交流群" EventType="打开网页" EventData="https://qq.womadao.top" />
+        </StackPanel>
+      
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="欢迎来到沃玛岛！（点击查看服务器简介）" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+        <Image Height="400" HorizontalAlignment="Center" Source="https://womadao.warma.ren/assets/img/homebg.jpg" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="16"
+                   Text="关于服务器" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" 
+                   Text="       沃玛岛是b站up 沃玛@warma 的粉丝们制作的一个Minecraft公益服务器，它面向所有Minecraft玩家，即使您不是沃玛的粉丝，相信你也能在这里体会到不一样的体验。本服务器版本为Java版（电脑版）1.14.4，有原版生存、空岛生存、地皮建筑、多人小游戏（正在开发）等玩法，你还能在沃玛岛欣赏唯美的风景、体验独特的玩法——有着千年历史的忆雨镇、令人尖叫的章鱼花过山车、号称美食圣地的美食街……（更多交互功能正在开发中）" />
+        <TextBlock TextWrapping="Wrap" Margin="20,5,20,0" Foreground="#676767"
+                   Text="更多介绍请前往官网查看" />
+         <local:MyButton Margin="0,8,0,10" Width="250" Height="35" ColorType="Highlight"
+                   Text="沃玛岛官网" EventType="打开网页" EventData="https://womdao.top" ToolTip="点击打开 沃玛岛官网" />
+    </StackPanel>
+</local:MyCard>
+
+
+    <local:MyHint Margin="0,0,0,15" IsWarn="False"
+                   Text="下面是使用教程" />
+
+
+<local:MyCard Title="一、注册账号" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                   Text="①点击左边的“注册账号”按钮，转跳到注册页面" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" Foreground="#676767"
+                   Text="（如果你已经注册过账号了，你可以直接使用你在“沃玛人”的账号密码登录）" />
+        <Image Height="450" HorizontalAlignment="Center" Source="https://womadao.warma.ren/assets/img/register.png" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" 
+                   Text="②点击注册后，你的邮箱会收到一封验证邮件，请打开邮件中的链接以验证你的邮箱！" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" 
+                   Text="③好的，现在你可以使用右边的登录界面登录了！" />
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="二、更换皮肤" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+        <local:MyButton Margin="0,8,0,10" Width="250" Height="35" ColorType="Highlight"
+                   Text="前往“沃玛人皮肤站”" EventType="打开网页" EventData="https://skin.warma.ren/user" ToolTip="点击打开 沃玛人皮肤站" />   
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                   Text="①点击上面的按钮前往皮肤站" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                   Text="   你可以在右上角切换网站语言" />
+        <Image Height="50" HorizontalAlignment="Center" Source="https://womadao.warma.ren/assets/img/help0002.png" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" 
+                   Text="②登录后，在左侧导航栏找到“角色管理”，在此，你可以修改你的游戏id、创建新的角色" />
+        <Image Height="100" HorizontalAlignment="Center" Source="https://womadao.warma.ren/assets/img/help0007.png" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                   Text="③你可以点击左侧导航栏“我的衣柜”上传你自己的皮肤，你可可以点击“皮肤库”找到你喜欢的皮肤并使用" />
+        <TextBlock TextWrapping="Wrap" Margin="20,5,20,0" 
+                   Text="④使用“我的衣柜”上传皮肤并使用：" />
+        <Image Height="700" HorizontalAlignment="Center" Source="https://womadao.warma.ren/assets/img/help0004.png" />
+        <TextBlock TextWrapping="Wrap" Margin="20,5,20,0" 
+                   Text="       （1）点击右下角“立即使用”按钮" />
+        <TextBlock TextWrapping="Wrap" Margin="20,5,20,0" 
+                   Text="       （2）选则使用的角色" />
+        <Image Height="200" HorizontalAlignment="Center" Source="https://womadao.warma.ren/assets/img/help0009.png" />
+        <TextBlock TextWrapping="Wrap" Margin="20,5,20,0" 
+                   Text="       （3）设置完成！你可以点击下方按钮进入沃玛岛"/>
+        <local:MyButton Margin="80,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                   Text="进入沃玛岛" EventType="启动游戏" EventData="沃玛岛服务器|mc.womadao.top" ToolTip="进入沃玛岛服务器" />
+        <TextBlock TextWrapping="Wrap" Margin="20,5,20,0" 
+                   Text="⑤在“皮肤库”使用皮肤：" />
+        <TextBlock TextWrapping="Wrap" Margin="20,5,20,0" 
+                   Text="       （1）首先，找到你喜欢的皮肤并点进去" />
+        <TextBlock TextWrapping="Wrap" Margin="20,5,20,0" 
+                   Text="       （2）点击右下角“添加至衣柜”按钮" />    
+        <Image Height="80" HorizontalAlignment="Center" Source="https://womadao.warma.ren/assets/img/help0008.png" />
+        <TextBlock TextWrapping="Wrap" Margin="20,5,20,0" 
+                   Text="       （3）点击右下角“立即使用”按钮" />
+        <Image Height="80" HorizontalAlignment="Center" Source="https://womadao.warma.ren/assets/img/help0005.png" />
+        <TextBlock TextWrapping="Wrap" Margin="20,5,20,0" 
+                   Text="       （4）选则使用的角色" />
+        <Image Height="200" HorizontalAlignment="Center" Source="https://womadao.warma.ren/assets/img/help0009.png" />
+        <TextBlock TextWrapping="Wrap" Margin="20,5,20,0" 
+                   Text="       （5）设置完成！你可以点击下方按钮进入沃玛岛"/>
+        <local:MyButton Margin="80,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                   Text="进入沃玛岛" EventType="启动游戏" EventData="沃玛岛服务器|mc.womadao.top" ToolTip="进入沃玛岛服务器" />
+        <TextBlock TextWrapping="Wrap" Margin="20,5,20,0" 
+                   Text="⑥在“我的衣柜”中管理皮肤" />
+        <TextBlock TextWrapping="Wrap" Margin="20,5,20,0" 
+                   Text="       （1）选中皮肤后可以在屏幕右侧预览窗口下方点击“使用…”来使用皮肤" />
+        <Image Height="80" HorizontalAlignment="Center" Source="https://womadao.warma.ren/assets/img/help0001.png" />
+        <TextBlock TextWrapping="Wrap" Margin="20,5,20,0" 
+                   Text="       （2）点击皮肤右下角的“齿轮”形按钮，可以删除衣柜中的皮肤" />
+        <Image Height="400" HorizontalAlignment="Center" Source="https://womadao.warma.ren/assets/img/help0006.png" />
+        <TextBlock TextWrapping="Wrap" Margin="20,5,20,0" 
+                   Text="       （3）如果你想要彻底删除你上传的皮肤，点击皮肤右下角的“齿轮”形按钮，点击“在皮肤库中查看”，点击右下角“删除材质”即可" />
+        <Image Height="250" HorizontalAlignment="Center" Source="https://womadao.warma.ren/assets/img/help0011.png" />
+
+    </StackPanel>
+</local:MyCard>
+
+<!-- 此帮助文档由橙息编辑 -->
+
